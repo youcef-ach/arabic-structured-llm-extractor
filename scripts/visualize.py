@@ -28,7 +28,7 @@ def visualize_military_state(json_path):
             # Plot the point
             ax.scatter(x, y, color=color, marker=marker, s=150, edgecolors='black', label=unit["name"])
             # Add label
-            ax.text(x + 0.05, y + 0.05, unit["name"], fontsize=9, color=color, 
+            ax.text(x + 1.0, y + 1.0, unit["name"], fontsize=9, color=color, 
                     bbox=dict(facecolor='white', alpha=0.6, edgecolor='none'))
             
         # Plot subunits
@@ -42,9 +42,9 @@ def visualize_military_state(json_path):
         plot_unit(force, color, 's') # 's' for square (battalion level usually)
         
     # Set up the map view
-    ax.set_title("Tactical Map Visualization")
-    ax.set_xlabel("X Coordinate")
-    ax.set_ylabel("Y Coordinate")
+    ax.set_title("Synthetic 2D Scene Visualization")
+    ax.set_xlabel("Scene X Coordinate (Cartesian Grid)")
+    ax.set_ylabel("Scene Y Coordinate (Cartesian Grid)")
     ax.grid(True, linestyle='--', alpha=0.7)
     
     # Check if we have items, otherwise just show a default grid
@@ -67,3 +67,6 @@ if __name__ == "__main__":
         visualize_military_state(target)
     except ImportError:
         print("Error: matplotlib is not installed. Run: pip install matplotlib")
+
+# Backward compatibility alias
+visualize_tactical_state = visualize_military_state

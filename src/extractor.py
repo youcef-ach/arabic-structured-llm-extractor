@@ -5,7 +5,7 @@ from pathlib import Path
 import jsonschema
 
 # Path resolution relative to repository root
-DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parent.parent / "schema" / "military_state.json"
+DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parent.parent / "schema" / "tactical_state.json"
 
 
 class LocalLLMExtractor:
@@ -105,7 +105,7 @@ JSON OUTPUT:
 
 if __name__ == "__main__":
     extractor = LocalLLMExtractor()
-    sample_text = "تتمركز الكتيبة الصديقة الأولى في مقر القيادة علامة (15.200 , 35.400)."
+    sample_text = "تتمركز الكتيبة الصديقة الأولى في إحداثيات المشهد الديكارتية (25.0 , 75.0)."
     print("Testing extraction prompt on text:", sample_text)
     result = extractor.extract(sample_text)
     if result:

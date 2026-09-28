@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Military State",
-  "description": "Schema for extracting military entities, hierarchies, coordinates, and tactical lines from Arabic text.",
+  "title": "Tactical State",
+  "description": "Schema for extracting tactical entities, hierarchies, coordinates, and lines from Arabic text.",
   "type": "object",
   "properties": {
     "areas_of_operation": {
@@ -10,18 +10,25 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": { "type": "string" },
+          "name": {
+            "type": "string"
+          },
           "coordinates": {
             "type": "array",
             "items": {
               "type": "array",
-              "items": { "type": "number" },
+              "items": {
+                "type": "number"
+              },
               "minItems": 2,
               "maxItems": 2
             }
           }
         },
-        "required": ["name", "coordinates"]
+        "required": [
+          "name",
+          "coordinates"
+        ]
       }
     },
     "tactical_lines": {
@@ -30,27 +37,47 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": { "type": "string" },
-          "type": { "type": "string", "enum": ["axis_of_advance", "line_of_departure", "engagement_line", "other"] },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "axis_of_advance",
+              "line_of_departure",
+              "engagement_line",
+              "other"
+            ]
+          },
           "points": {
             "type": "array",
             "description": "Coordinates making up the line, e.g. right bound, left bound, or sequential path points.",
             "items": {
               "type": "object",
               "properties": {
-                "description": { "type": "string", "description": "e.g., 'حد يمين' or 'نقطة 1'" },
+                "description": {
+                  "type": "string",
+                  "description": "e.g., 'حد يمين' or 'نقطة 1'"
+                },
                 "coordinate": {
                   "type": "array",
-                  "items": { "type": "number" },
+                  "items": {
+                    "type": "number"
+                  },
                   "minItems": 2,
                   "maxItems": 2
                 }
               },
-              "required": ["coordinate"]
+              "required": [
+                "coordinate"
+              ]
             }
           }
         },
-        "required": ["name", "points"]
+        "required": [
+          "name",
+          "points"
+        ]
       }
     },
     "forces": {
@@ -65,18 +92,47 @@
     "military_unit": {
       "type": "object",
       "properties": {
-        "name": { "type": "string", "description": "Name of the unit, e.g. 'الكتيبة الصديقة الأولى'" },
-        "level": { "type": "string", "enum": ["battalion", "company", "platoon", "squad", "vehicle", "heavy_weapon"] },
-        "affiliation": { "type": "string", "enum": ["friendly", "enemy", "neutral", "unknown"] },
-        "task": { "type": "string", "description": "Current task, e.g. 'الهجوم على الفصيلة المعادية الأولى'" },
+        "name": {
+          "type": "string",
+          "description": "Name of the unit, e.g. 'الكتيبة الصديقة الأولى'"
+        },
+        "level": {
+          "type": "string",
+          "enum": [
+            "battalion",
+            "company",
+            "platoon",
+            "squad",
+            "vehicle",
+            "heavy_weapon"
+          ]
+        },
+        "affiliation": {
+          "type": "string",
+          "enum": [
+            "friendly",
+            "enemy",
+            "neutral",
+            "unknown"
+          ]
+        },
+        "task": {
+          "type": "string",
+          "description": "Current task, e.g. 'الهجوم على الفصيلة المعادية الأولى'"
+        },
         "location": {
           "type": "object",
           "description": "Location details (if specified at this level)",
           "properties": {
-            "description": { "type": "string", "description": "e.g., 'مقر القيادة', 'تتمركز'" },
+            "description": {
+              "type": "string",
+              "description": "e.g., 'مقر القيادة', 'تتمركز'"
+            },
             "coordinate": {
               "type": "array",
-              "items": { "type": "number" },
+              "items": {
+                "type": "number"
+              },
               "minItems": 2,
               "maxItems": 2
             }
@@ -90,7 +146,11 @@
           }
         }
       },
-      "required": ["name", "level", "affiliation"]
+      "required": [
+        "name",
+        "level",
+        "affiliation"
+      ]
     }
   }
 }
