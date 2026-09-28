@@ -1,0 +1,21 @@
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*.class
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local execution outputs
+pipeline_state.json
+synth_pipeline_state.json
+map_visualization.png
+
+# OS artifacts
+.DS_Store
+Thumbs.db
