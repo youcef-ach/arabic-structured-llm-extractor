@@ -1,0 +1,37 @@
+{
+  "text": "تتمركز الكتيبة المعادية الثانية في مقر القيادة علامة (42.872 , 42.202). وتتكون من عدة سرايا، منها سرية الاستطلاع التي تتواجد في العلامة (26.047 , 12.648). تقوم سرية الاستطلاع بـ الدفاع عن المنطقة المحددة.",
+  "ground_truth": {
+    "forces": [
+      {
+        "name": "الكتيبة المعادية الثانية",
+        "level": "battalion",
+        "affiliation": "enemy",
+        "location": {
+          "description": "مقر القيادة",
+          "coordinate": [
+            42.872,
+            42.202
+          ]
+        },
+        "sub_units": [
+          {
+            "name": "سرية الاستطلاع",
+            "level": "company",
+            "affiliation": "enemy",
+            "task": "الدفاع عن المنطقة المحددة",
+            "location": {
+              "description": "تتواجد في",
+              "coordinate": [
+                26.047,
+                12.648
+              ]
+            },
+            "sub_units": []
+          }
+        ]
+      }
+    ],
+    "tactical_lines": [],
+    "areas_of_operation": []
+  }
+}

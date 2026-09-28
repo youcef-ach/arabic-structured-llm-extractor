@@ -1,0 +1,37 @@
+{
+  "text": "تتمركز الكتيبة الصديقة الأولى في مقر القيادة علامة (19.796 , 15.582). وتتكون من عدة سرايا، منها السرية الصديقة الأولى التي تتواجد في العلامة (14.1 , 39.627). تقوم السرية الصديقة الأولى بـ تأمين المنطقة المحددة.",
+  "ground_truth": {
+    "forces": [
+      {
+        "name": "الكتيبة الصديقة الأولى",
+        "level": "battalion",
+        "affiliation": "friendly",
+        "location": {
+          "description": "مقر القيادة",
+          "coordinate": [
+            19.796,
+            15.582
+          ]
+        },
+        "sub_units": [
+          {
+            "name": "السرية الصديقة الأولى",
+            "level": "company",
+            "affiliation": "friendly",
+            "task": "تأمين المنطقة المحددة",
+            "location": {
+              "description": "تتواجد في",
+              "coordinate": [
+                14.1,
+                39.627
+              ]
+            },
+            "sub_units": []
+          }
+        ]
+      }
+    ],
+    "tactical_lines": [],
+    "areas_of_operation": []
+  }
+}

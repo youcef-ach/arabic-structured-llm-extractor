@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Military State",
+  "description": "Schema for extracting military entities, hierarchies, coordinates, and tactical lines from Arabic text.",
+  "type": "object",
+  "properties": {
+    "areas_of_operation": {
+      "type": "array",
+      "description": "General areas defined by multiple coordinate points (e.g. منطقة العمليات, منطقة الانتظار, منطقة التحشد).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "coordinates": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        "required": ["name", "coordinates"]
+      }
+    },
+    "tactical_lines": {
+      "type": "array",
+      "description": "Lines such as Line of Departure (خط الإنطلاق), Axes (محور التقدم), etc.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["axis_of_advance", "line_of_departure", "engagement_line", "other"] },
+          "points": {
+            "type": "array",
+            "description": "Coordinates making up the line, e.g. right bound, left bound, or sequential path points.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "description": { "type": "string", "description": "e.g., 'حد يمين' or 'نقطة 1'" },
+                "coordinate": {
+                  "type": "array",
+                  "items": { "type": "number" },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              },
+              "required": ["coordinate"]
+            }
+          }
+        },
+        "required": ["name", "points"]
+      }
+    },
+    "forces": {
+      "type": "array",
+      "description": "Top-level military units (e.g., Battalions or Independent Companies)",
+      "items": {
+        "$ref": "#/definitions/military_unit"
+      }
+    }
+  },
+  "definitions": {
+    "military_unit": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the unit, e.g. 'الكتيبة الصديقة الأولى'" },
+        "level": { "type": "string", "enum": ["battalion", "company", "platoon", "squad", "vehicle", "heavy_weapon"] },
+        "affiliation": { "type": "string", "enum": ["friendly", "enemy", "neutral", "unknown"] },
+        "task": { "type": "string", "description": "Current task, e.g. 'الهجوم على الفصيلة المعادية الأولى'" },
+        "location": {
+          "type": "object",
+          "description": "Location details (if specified at this level)",
+          "properties": {
+            "description": { "type": "string", "description": "e.g., 'مقر القيادة', 'تتمركز'" },
+            "coordinate": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        "sub_units": {
+          "type": "array",
+          "description": "Lower-level units contained within this unit.",
+          "items": {
+            "$ref": "#/definitions/military_unit"
+          }
+        }
+      },
+      "required": ["name", "level", "affiliation"]
+    }
+  }
+}

@@ -1,0 +1,382 @@
+[
+  {
+    "id": 0,
+    "text": "تتمركز الكتيبة الصديقة الأولى في مقر القيادة علامة (19.796 , 15.582). وتتكون من عدة سرايا، منها السرية الصديقة الأولى التي تتواجد في العلامة (14.1 , 39.627). تقوم السرية الصديقة الأولى بـ تأمين المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "الكتيبة الصديقة الأولى",
+          "level": "battalion",
+          "affiliation": "friendly",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              19.796,
+              15.582
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية الصديقة الأولى",
+              "level": "company",
+              "affiliation": "friendly",
+              "task": "تأمين المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  14.1,
+                  39.627
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 1,
+    "text": "تتمركز الكتيبة الصديقة الأولى في مقر القيادة علامة (13.748 , 19.306). وتتكون من عدة سرايا، منها سرية المشاة الميكانيكية التي تتواجد في العلامة (34.081 , 32.45). تقوم سرية المشاة الميكانيكية بـ الهجوم على المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "الكتيبة الصديقة الأولى",
+          "level": "battalion",
+          "affiliation": "friendly",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              13.748,
+              19.306
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "سرية المشاة الميكانيكية",
+              "level": "company",
+              "affiliation": "friendly",
+              "task": "الهجوم على المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  34.081,
+                  32.45
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 2,
+    "text": "تتمركز كتيبة الدروع الرابعة في مقر القيادة علامة (42.377 , 10.26). وتتكون من عدة سرايا، منها السرية المعادية الأولى التي تتواجد في العلامة (42.233 , 37.926). تقوم السرية المعادية الأولى بـ تأمين المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة الدروع الرابعة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              42.377,
+              10.26
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية المعادية الأولى",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "تأمين المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  42.233,
+                  37.926
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 3,
+    "text": "تتمركز كتيبة المشاة الثالثة في مقر القيادة علامة (48.289 , 23.464). وتتكون من عدة سرايا، منها سرية الاستطلاع التي تتواجد في العلامة (13.71 , 13.869). تقوم سرية الاستطلاع بـ الدفاع عن المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة المشاة الثالثة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              48.289,
+              23.464
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "سرية الاستطلاع",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "الدفاع عن المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  13.71,
+                  13.869
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 4,
+    "text": "تتمركز كتيبة المشاة الثالثة في مقر القيادة علامة (31.449 , 48.925). وتتكون من عدة سرايا، منها سرية الاستطلاع التي تتواجد في العلامة (25.141 , 32.082). تقوم سرية الاستطلاع بـ استطلاع المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة المشاة الثالثة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              31.449,
+              48.925
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "سرية الاستطلاع",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "استطلاع المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  25.141,
+                  32.082
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 5,
+    "text": "تتمركز كتيبة المشاة الثالثة في مقر القيادة علامة (11.833 , 19.116). وتتكون من عدة سرايا، منها السرية المعادية الأولى التي تتواجد في العلامة (21.576 , 13.192). تقوم السرية المعادية الأولى بـ الهجوم على المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة المشاة الثالثة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              11.833,
+              19.116
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية المعادية الأولى",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "الهجوم على المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  21.576,
+                  13.192
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 6,
+    "text": "تتمركز الكتيبة المعادية الثانية في مقر القيادة علامة (28.136 , 43.364). وتتكون من عدة سرايا، منها السرية الصديقة الأولى التي تتواجد في العلامة (16.506 , 24.211). تقوم السرية الصديقة الأولى بـ تأمين المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "الكتيبة المعادية الثانية",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              28.136,
+              43.364
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية الصديقة الأولى",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "تأمين المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  16.506,
+                  24.211
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 7,
+    "text": "تتمركز كتيبة المشاة الثالثة في مقر القيادة علامة (31.366 , 19.792). وتتكون من عدة سرايا، منها السرية الصديقة الأولى التي تتواجد في العلامة (28.49 , 20.798). تقوم السرية الصديقة الأولى بـ الدفاع عن المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة المشاة الثالثة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              31.366,
+              19.792
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية الصديقة الأولى",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "الدفاع عن المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  28.49,
+                  20.798
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 8,
+    "text": "تتمركز الكتيبة المعادية الثانية في مقر القيادة علامة (42.872 , 42.202). وتتكون من عدة سرايا، منها سرية الاستطلاع التي تتواجد في العلامة (26.047 , 12.648). تقوم سرية الاستطلاع بـ الدفاع عن المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "الكتيبة المعادية الثانية",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              42.872,
+              42.202
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "سرية الاستطلاع",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "الدفاع عن المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  26.047,
+                  12.648
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  },
+  {
+    "id": 9,
+    "text": "تتمركز كتيبة المشاة الثالثة في مقر القيادة علامة (25.825 , 46.582). وتتكون من عدة سرايا، منها السرية المعادية الأولى التي تتواجد في العلامة (28.354 , 20.595). تقوم السرية المعادية الأولى بـ استطلاع المنطقة المحددة.",
+    "ground_truth": {
+      "forces": [
+        {
+          "name": "كتيبة المشاة الثالثة",
+          "level": "battalion",
+          "affiliation": "enemy",
+          "location": {
+            "description": "مقر القيادة",
+            "coordinate": [
+              25.825,
+              46.582
+            ]
+          },
+          "sub_units": [
+            {
+              "name": "السرية المعادية الأولى",
+              "level": "company",
+              "affiliation": "enemy",
+              "task": "استطلاع المنطقة المحددة",
+              "location": {
+                "description": "تتواجد في",
+                "coordinate": [
+                  28.354,
+                  20.595
+                ]
+              },
+              "sub_units": []
+            }
+          ]
+        }
+      ],
+      "tactical_lines": [],
+      "areas_of_operation": []
+    }
+  }
+]
